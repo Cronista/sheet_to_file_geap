@@ -17,8 +17,8 @@ def main():
 def inicio():
     
     """
-    Define variáveis do workbook (arquivo) e worksheet (planilha);
-    Limpa as células da planilha arquivo e, após, nomeia as colunas.
+    Define workbook (file) and worksheet (sheet) variables;
+    Clears the cells of the file sheet and then names the columns.
     
     """
     
@@ -45,9 +45,14 @@ def inicio():
 def copiarRows(ws_arquivo, ws_pgto):
     
     """
-    Copia as matrículas para a planilha do arquivo.
+    Copies the rows from the user typed worksheet to the file worksheet.
+    
+    Parameters:
+    ws_arquivo: The worksheet where data will be copied to.
+    ws_pgto: The worksheet from which data will be copied.
     
     """
+    
     #definir ultima matricula cadastrada
     fim_mat_pgto = 20
     
